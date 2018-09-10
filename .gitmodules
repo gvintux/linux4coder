@@ -1,0 +1,9 @@
+[submodule "help"]
+	path = help
+	url = https://github.com/gvintux/linux4coder-help.git
+[submodule "tools"]
+	path = tools
+	url = https://github.com/gvintux/linux4coder-tools.git
+[submodule "examples"]
+	path = examples
+	url = https://github.com/gvintux/linux4coder-examples.git
