@@ -89,7 +89,7 @@ read [linux4coder-installation-and-run.pdf](linux4coder-installation-and-run.pdf
 
 After successful installation and run `linux4coder` you should initialize your workplace:
 
-* run `./initialize.sh` script from your home directory
+* run `./update.sh` script from your home directory
 
 * run `ls` after initialization, you'll see such directories and files:
 
