@@ -106,6 +106,3 @@ After successful installation and run `linux4coder` you should initialize your w
 * run `./update.sh` script to update your workplace with new stuff
 
 *It's not recommended to create and modify any directories or files outside your **projects** directory*
-
-<hr/>
-&copy; v2018-09-10 Alexander V. Kozhaev
