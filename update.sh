@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 INIT_TMP=/tmp/linux4coder
 L4C_GIT_REPO=https://github.com/gvintux/linux4coder.git
-LOG_FILE=/tmp/linux4coder-init.log
+LOG_FILE=/tmp/linux4coder-update.log
 function test_retcode() {
 	if [[ $? -eq 0 ]]
 	then
@@ -20,10 +20,13 @@ cd ${INIT_TMP}
 printf "* загрузка нового рабочего пространства "
 git clone --quiet ${L4C_GIT_REPO} . 2> ${LOG_FILE}
 test_retcode
-printf "* обновление компонентов \t\t"
-git submodule update --quiet 2>> ${LOG_FILE}
+printf "* обновление компонентов [1]\t\t"
+git submodule --quiet update --init --quiet 2>> ${LOG_FILE}
 test_retcode
-HOME=/tmp/ble
+printf "* обновление компонентов [2]\t\t"
+git submodule --quiet foreach git pull --quiet origin master 2>> ${LOG_FILE}
+test_retcode
+#HOME=/tmp/home
 printf "* установка рабочего пространства \t"
 cp ./ ${HOME} -r -f 2> ${LOG_FILE}
 test_retcode
