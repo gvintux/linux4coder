@@ -48,6 +48,8 @@ read [linux4coder-installation-and-run.pdf](linux4coder-installation-and-run.pdf
 
 * C/C++ compiler GCC 7.3.0-16
 
+* C/C++ compiler Clang 6.0-41
+
 * Data exchange utility curl 7.58.0
 
 * Debugger GDB 8.1.0
