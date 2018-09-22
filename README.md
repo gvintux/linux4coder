@@ -99,6 +99,8 @@ After successful installation and run `linux4coder` you should initialize your w
 
     * **help**
 
+    * **tasks**
+
     * **tools**
 
     * **update.sh**
