@@ -28,7 +28,7 @@ That's why:
 
 ## Installation and Run
 
-read [linux4coder-install-and-run.pdf](linux4coder/blob/master/linux4coder-installation-and-run.pdf)
+read [linux4coder-install-and-run.pdf](linux4coder-install-and-run.pdf)
 
 ## Included software
 
@@ -104,6 +104,8 @@ After successful installation and run `linux4coder` you should initialize your w
     * **tools**
 
     * **update.sh**
+    
+    * **linux4coder-install-and-run.pdf**
 
 * run `mkdir projects` to create **projects** directory for locating your work there
 
