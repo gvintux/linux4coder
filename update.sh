@@ -8,31 +8,31 @@ function test_retcode() {
 		printf "[OK]\n"
 	else
 		printf "[FAIL]\n"
-		printf "Смотрите журнал ${LOG_FILE}\n"
+		printf "Watch log ${LOG_FILE}\n"
 		exit $?
 	fi
 }
-printf "Обновление рабочего пространства linux4coder\n"
-printf "* cоздание временных папок \t\t"
+printf "Updating linux4coder workspace\n"
+printf "* creating temporary folders \t\t"
 mkdir ${INIT_TMP} 2> ${LOG_FILE}
 test_retcode
 cd ${INIT_TMP}
-printf "* загрузка нового рабочего пространства "
+printf "* uploading new workspace "
 git clone --quiet ${L4C_GIT_REPO} . 2> ${LOG_FILE}
 test_retcode
-printf "* обновление компонентов [1]\t\t"
+printf "* updating components [1]\t\t"
 git submodule --quiet update --init --quiet 2>> ${LOG_FILE}
 test_retcode
-printf "* обновление компонентов [2]\t\t"
+printf "* updating components [2]\t\t"
 git submodule --quiet foreach git pull --quiet origin master 2>> ${LOG_FILE}
 test_retcode
 #HOME=/tmp/home
-printf "* установка рабочего пространства \t"
+printf "* installing workspace \t"
 cp ./ ${HOME} -r -f 2> ${LOG_FILE}
 test_retcode
-printf "* удаление временных файлов \t\t"
+printf "* deleting temporary files \t\t"
 rm ${INIT_TMP} -fR 2> ${LOG_FILE}
 test_retcode
-printf "Обновление рабочего пространства завершено\n"
+printf "Updating finished\n"
 cd ${HOME}
 exit 0
