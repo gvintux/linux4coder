@@ -28,7 +28,7 @@ That's why:
 
 ## Installation and Run
 
-read [linux4coder-installation-and-run.pdf](linux4coder-installation-and-run.pdf)
+read [linux4coder-install-and-run.pdf](linux4coder/blob/master/linux4coder-installation-and-run.pdf)
 
 ## Included software
 
