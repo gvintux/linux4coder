@@ -48,6 +48,8 @@ read [linux4coder-install-and-run.pdf](linux4coder/blob/master/linux4coder-insta
 
 * C/C++ compiler GCC 7.3.0-16
 
+* C/C++ compiler Clang 6.0-41
+
 * Data exchange utility curl 7.58.0
 
 * Debugger GDB 8.1.0
@@ -96,6 +98,8 @@ After successful installation and run `linux4coder` you should initialize your w
     * **examples**
 
     * **help**
+
+    * **tasks**
 
     * **tools**
 
