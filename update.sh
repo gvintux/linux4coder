@@ -17,7 +17,7 @@ printf "* creating temporary folders \t\t"
 mkdir ${INIT_TMP} 2> ${LOG_FILE}
 test_retcode
 cd ${INIT_TMP}
-printf "* uploading new workspace "
+printf "* uploading new workspace \t\t"
 git clone --quiet ${L4C_GIT_REPO} . 2> ${LOG_FILE}
 test_retcode
 printf "* updating components [1]\t\t"
@@ -27,7 +27,7 @@ printf "* updating components [2]\t\t"
 git submodule --quiet foreach git pull --quiet origin master 2>> ${LOG_FILE}
 test_retcode
 #HOME=/tmp/home
-printf "* installing workspace \t"
+printf "* installing workspace \t\t\t"
 cp ./ ${HOME} -r -f 2> ${LOG_FILE}
 test_retcode
 printf "* deleting temporary files \t\t"
