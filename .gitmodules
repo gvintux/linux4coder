@@ -7,3 +7,6 @@
 [submodule "examples"]
 	path = examples
 	url = https://github.com/gvintux/linux4coder-examples.git
+[submodule "tasks"]
+	path = tasks
+	url = https://github.com/gvintux/linux4coder-tasks.git
