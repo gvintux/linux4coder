@@ -12,6 +12,7 @@ function test_retcode() {
 		exit $?
 	fi
 }
+printf "linux4coder update log\n" > ${LOG_FILE}
 printf "Updating linux4coder workspace\n"
 printf "* creating temporary folders \t\t"
 mkdir ${INIT_TMP} 2> ${LOG_FILE}
@@ -26,7 +27,7 @@ test_retcode
 printf "* updating components [2]\t\t"
 git submodule --quiet foreach git pull --quiet origin master 2>> ${LOG_FILE}
 test_retcode
-#HOME=/tmp/home
+HOME=/tmp/home
 printf "* installing workspace \t\t\t"
 cp ./ ${HOME} -r -f 2> ${LOG_FILE}
 test_retcode
