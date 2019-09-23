@@ -32,7 +32,7 @@ read [linux4coder-install-and-run.pdf](linux4coder-install-and-run.pdf)
 
 ## Included software
 
-* OS Ubuntu Linux 4.15.0-33
+* OS Ubuntu Linux 4.15.0-64
 
 * Analyzer Valgrind 3.13.0
 
@@ -46,9 +46,9 @@ read [linux4coder-install-and-run.pdf](linux4coder-install-and-run.pdf)
 
 * Build tool make 4.1
 
-* C/C++ compiler GCC 7.3.0-16
+* C/C++ compiler GCC 7.4.0
 
-* C/C++ compiler Clang 6.0-41
+* C/C++ compiler Clang 6.0
 
 * Data exchange utility curl 7.58.0
 
@@ -56,15 +56,15 @@ read [linux4coder-install-and-run.pdf](linux4coder-install-and-run.pdf)
 
 * File manager MC 4.8.19
 
-* Guest extensions VirtualBox 5.2.18
+* Guest extensions VirtualBox 6.0.12
 
 * Interpreter Python 2 7.15
 
-* Interpreter Python 3 3.6.5
+* Interpreter Python 3 3.6.8
 
-* JRE & JDK OpenJDK 10.0.2
+* JRE & JDK OpenJDK 11.0.3
 
-* Library OpenMPI 2.1.1
+* Library OpenMPI 2.1.1-8
 
 * Multitasking in terminal screen 4.06.02
 
@@ -76,7 +76,7 @@ read [linux4coder-install-and-run.pdf](linux4coder-install-and-run.pdf)
 
 * Test framework CUnit 2.1-3
 
-* Test framework Google Test 1.9.0
+* Test framework Google Test 1.8.0-6
 
 * Text editor nano 2.9.3
 
